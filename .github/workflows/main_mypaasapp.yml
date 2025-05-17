@@ -13,10 +13,10 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-- name: Show current directory and structure
-  run: |
-    echo "Current path: $(pwd)"
-    ls -R
+      - name: Show current directory and structure
+        run: |
+          echo "Current path: $(pwd)"
+          ls -R
 
       - name: Set up Node.js
         uses: actions/setup-node@v3
