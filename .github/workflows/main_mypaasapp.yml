@@ -16,7 +16,7 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Install dependencies from app folder
-        working-directory: https://github.com/oluwasee/MyPaaSApp/blob/main/myPasscode
+        working-directory: https://github.com/oluwasee/MyPaaSApp.git
         run: |
           npm install
           npm run build --if-present
