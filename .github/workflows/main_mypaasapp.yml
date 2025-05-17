@@ -15,12 +15,11 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Set Git root
-        run: echo "GIT_ROOT=$(git rev-parse --show-toplevel)" >> $GITHUB_ENV
-
-      - name: Install from Git root or subfolder
+      - name: Install dependencies from app folder
+        working-directory: myPasscode
         run: |
-          cd "$GIT_ROOT/C:\Users\LENOVO\OneDrive\mypaascode.txt"
+          npm install
+          npm run build --if-present
           npm install
 
       - name: Zip artifact for deployment
