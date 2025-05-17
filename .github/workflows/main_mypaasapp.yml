@@ -20,7 +20,7 @@ jobs:
 
       - name: Install from Git root or subfolder
         run: |
-          cd "$GIT_ROOT/myPasscode"
+          cd "$GIT_ROOT/C:\Users\LENOVO\OneDrive\mypaascode.txt"
           npm install
 
       - name: Zip artifact for deployment
